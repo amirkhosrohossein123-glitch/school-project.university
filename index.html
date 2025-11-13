@@ -3,28 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>رزومه آپدیت‌شده | امیرحسین خسروپور</title>
-
-  <!-- Bootstrap 4 CSS -->
+  <title>رزومه | امیرحسین خسروپور</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- فونت فارسی (اختیاری) -->
   <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet">
-
   <style>
     body { font-family: 'Vazir', sans-serif; background: #f8f9fa; }
     .navbar { box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-    .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 100px 0; }
-    .skill-bar { height: 8px; }
-    .card { transition: 0.3s; }
-    .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+    .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 120px 0; }
+    .skill-bar { height: 12px; border-radius: 6px; }
+    .card { transition: all 0.3s; border: none; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+    .card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
+    .progress-bar { font-size: 11px; font-weight: bold; }
+    .badge-skill { font-size: 0.9rem; margin: 3px; padding: 8px 14px; border-radius: 50px; }
   </style>
 </head>
 <body>
 
-  <!-- 1. Navbar -->
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="#">امیرحسین خسروپور</a>
+      <a class="navbar-brand font-weight-bold" href="#">امیرحسین خسروپور</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -39,143 +37,137 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section class="hero text-center">
     <div class="container">
-      <h1 class="display-4">سلام، من <strong>امیرحسین خسروپور</strong> هستم</h1>
-      <p class="lead">توسعه‌دهنده وب |دانشجوی دانشگاه :باراجین قزوین</p>
-      <a href="#contact" class="btn btn-light btn-lg mt-3">تماس با من</a>
+      <h1 class="display-3 font-weight-bold">امیرحسین خسروپور</h1>
+      <p class="lead mb-4">Full-Stack Developer | DevOps Enthusiast | Cybersecurity & AI Lover</p>
+      <p class="h5">دانشجوی مهندسی کامپیوتر — دانشگاه باراجین قزوین</p>
+      <a href="#contact" class="btn btn-light btn-lg mt-4 px-5">تماس با من</a>
     </div>
   </section>
 
   <div class="container my-5">
 
-    <!-- 2. About Me (Card) -->
+    <!-- About + Photo -->
     <section id="about" class="my-5">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="card text-center h-100">
-            <img src="profile.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="عکس من" style="width:150px;">
+      <div class="row align-items-center">
+        <div class="col-lg-4 text-center">
+          <div class="card border-0 shadow-lg">
+            <img src="profile.jpg" class="rounded-circle mx-auto mt-4 border border-white shadow" alt="امیرحسین خسروپور" style="width:180px; height:180px; object-fit:cover;">
             <div class="card-body">
-              <h5 class="card-title">درباره من</h5>
-              <p class="card-text">دانشجوی مهندسی کامپیوتر، علاقه‌مند به توسعه وب و طراحی رابط کاربری و کد نویسی  مهندسی کامپیوتر.</p>
+              <h4 class="mt-3">امیرحسین خسروپور</h4>
+              <p class="text-muted">توسعه‌دهنده تمام‌استک و عاشق تکنولوژی</p>
             </div>
           </div>
         </div>
-
-        <!-- 3. Carousel (پروژه‌ها/گواهینامه‌ها) -->
         <div class="col-lg-8">
-          <div id="carouselProjects" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselProjects" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselProjects" data-slide-to="1"></li>
-              <li data-target="#carouselProjects" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="https://via.placeholder.com/800x300?text=پروژه+1" class="d-block w-100" alt="پروژه 1">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>پروژه وب‌سایت فروشگاهی</h5>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="https://via.placeholder.com/800x300?text=گواهینامه+HTML" class="d-block w-100" alt="گواهینامه">
-              </div>
-              <div class="carousel-item">
-                <img src="https://via.placeholder.com/800x300?text=پروژه+اپلیکیشن" class="d-block w-100" alt="پروژه 2">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselProjects" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#carouselProjects" role="button" data-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </a>
-          </div>
+          <h2 class="mb-4">درباره من</h2>
+          <p class="lead">من یک توسعه‌دهنده پرانرژی و چندمهارتی هستم که عاشق یادگیری فناوری‌های جدید، امنیت سایبری، هوش مصنوعی و ساخت راه‌حل‌های خلاقانه‌ام. از سخت‌افزار و شبکه تا توسعه وب، موبایل، بک‌اند و DevOps — همه‌جا حضور دارم!</p>
         </div>
       </div>
     </section>
 
-    <!-- 4. Skills with Progress Bar -->
+    <!-- Skills — خیلی خفن و کامل -->
     <section id="skills" class="my-5">
-      <h2 class="text-center mb-4">مهارت‌های من</h2>
+      <h2 class="text-center mb-5">مهارت‌های فنی من</h2>
       <div class="row">
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-body">
-              <h6>HTML & CSS</h6>
-              <div class="progress skill-bar">
-                <div class="progress-bar bg-success" style="width: 90%">90%</div>
-              </div>
-            </div>
-          </div>
+
+        <div class="col-md-6 mb-4">
+          <h6>HTML & CSS</h6>
+          <div class="progress skill-bar mb-3"><div class="progress-bar bg-danger" style="width: 95%">95%</div></div>
+          <h6>Bootstrap</h6>
+          <div class="progress skill-bar mb-3"><div class="progress-bar bg-warning" style="width: 92%">92%</div></div>
+          <h6>Tailwind CSS</h6>
+          <div class="progress skill-bar mb-3"><div class="progress-bar bg-info" style="width: 88%">88%</div></div>
+          <h6>JavaScript</h6>
+          <div class="progress skill-bar mb-3"><div class="progress-bar bg-success" style="width: 85%">85%</div></div>
+          <h6>ReactJS / React Native</h6>
+          <div class="progress skill-bar mb-3"><div class="progress-bar bg-primary" style="width: 87%">87%</div></div>
+          <h6>Flutter</h6>
+          <div class="progress skill-bar mb-3"><div class="progress-bar bg-teal" style="width: 82%">82%</div></div>
+          <h6>Python</h6>
+          <div class="progress skill-bar mb-3"><div class="progress-bar bg-dark" style="width: 90%">90%</div></div>
+          <h6>Django</h6>
+          <div class="progress skill-bar mb-3"><div class="progress-bar bg-success" style="width: 88%">88%</div></div>
+          <h6>C# / .NET API</h6>
+          <div class="progress skill-bar mb-3"><div class="progress-bar bg-danger" style="width: 85%">85%</div></div>
+          <h6>Java</h6>
+          <div class="progress skill-bar mb-3"><div class="progress-bar bg-warning" style="width: 80%">80%</div></div>
         </div>
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-body">
-              <h6>JavaScript</h6>
-              <div class="progress skill-bar">
-                <div class="progress-bar bg-info" style="width: 75%">75%</div>
-              </div>
-            </div>
-          </div>
+
+        <div class="col-md-6 mb-4">
+          <h6>Linux & Windows Server</h6>
+          <div class="progress skill-bar mb-3"><div class="progress-bar bg-secondary" style="width: 92%">92%</div></div>
+          <h6>IIS, Nginx, Tomcat</h6>
+          <div class="progress skill-bar mb-3"><div class="progress-bar bg-dark" style="width: 90%">90%</div></div>
+          <h6>Git & GitHub</h6>
+          <div class="progress skill-bar mb-3"><div class="progress-bar bg-info" style="width: 93%">93%</div></div>
+          <h6>DevOps (Docker, CI/CD)</h6>
+          <div class="progress skill-bar mb-3"><div class="progress-bar bg-primary" style="width: 85%">85%</div></div>
+          <h6>MySQL / MS SQL / Oracle</h6>
+          <div class="progress skill-bar mb-3"><div class="progress-bar bg-success" style="width: 88%">88%</div></div>
+          <h6>Machine Learning</h6>
+          <div class="progress skill-bar mb-3"><div class="progress-bar bg-danger" style="width: 78%">78%</div></div>
+          <h6>Network Security & Pen-Test</h6>
+          <div class="progress skill-bar mb-3"><div class="progress-bar bg-dark" style="width: 83%">83%</div></div>
+          <h6>CISCO & VMware</h6>
+          <div class="progress skill-bar mb-3"><div class="progress-bar bg-secondary" style="width: 87%">87%</div></div>
+          <h6>UX/UI - Figma</h6>
+          <div class="progress skill-bar mb-3"><div class="progress-bar bg-pink" style="width: 88%">88%</div></div>
+          <h6>Prompt Engineering</h6>
+          <div class="progress skill-bar mb-3"><div class="progress-bar bg-purple" style="width: 90%">90%</div></div>
         </div>
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-body">
-              <h6>Bootstrap</h6>
-              <div class="progress skill-bar">
-                <div class="progress-bar bg-warning" style="width: 85%">85%</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-body">
-              <h6>Git & GitHub</h6>
-              <div class="progress skill-bar">
-                <div class="progress-bar bg-danger" style="width: 70%">70%</div>
-              </div>
-            </div>
-          </div>
+
+      </div>
+
+      <!-- مهارت‌های تکمیلی (بدون درصد) -->
+      <div class="text-center mt-5">
+        <h4>سایر مهارت‌ها</h4>
+        <div class="mt-3">
+          <span class="badge badge-pill badge-primary badge-skill">WordPress</span>
+          <span class="badge badge-pill badge-success badge-skill">WooCommerce</span>
+          <span class="badge badge-pill badge-danger badge-skill">SEO</span>
+          <span class="badge badge-pill badge-warning badge-skill">Photoshop</span>
+          <span class="badge badge-pill badge-info badge-skill">Game Dev</span>
+          <span class="badge badge-pill badge-dark badge-skill">Robotic</span>
+          <span class="badge badge-pill badge-secondary badge-skill">RegEx</span>
+          <span class="badge badge-pill badge-teal badge-skill">PowerPoint, Excel, Word</span>
         </div>
       </div>
     </section>
 
-    <!-- 5. Projects (Card + Modal) -->
+    <!-- Projects -->
     <section id="projects" class="my-5">
-      <h2 class="text-center mb-4">پروژه‌های من</h2>
+      <h2 class="text-center mb-5">پروژه‌های برجسته</h2>
       <div class="row">
         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/300x200?text=پروژه+1" class="card-img-top" alt="پروژه">
+          <div class="card h-100 shadow-lg">
+            <img src="https://via.placeholder.com/400x250?text=فروشگاه+آنلاین" class="card-img-top" alt="فروشگاه">
             <div class="card-body">
-              <h5 class="card-title">وب‌سایت فروشگاهی</h5>
-              <p class="card-text">ساخته شده با HTML, CSS, JS</p>
-              <button class="btn btn-primary" data-toggle="modal" data-target="#modal1">جزئیات</button>
+              <h5 class="card-title">وب‌سایت فروشگاهی حرفه‌ای</h5>
+              <p class="card-text">ساخته شده با Django + React + Stripe Payment + پنل مدیریت کامل</p>
+              <button class="btn btn-outline-primary" data-toggle="modal" data-target="#modal1">جزئیات</button>
             </div>
           </div>
         </div>
-        <!-- پروژه ۲ -->
         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/300x200?text=پروژه+2" class="card-img-top" alt="پروژه">
+          <div class="card h-100 shadow-lg">
+            <img src="https://via.placeholder.com/400x250?text=اپلیکیشن+موبایل" class="card-img-top" alt="اپ">
             <div class="card-body">
-              <h5 class="card-title">اپلیکیشن موبایل</h5>
-              <p class="card-text">با React Native</p>
-              <button class="btn btn-primary" data-toggle="modal" data-target="#modal2">جزئیات</button>
+              <h5 class="card-title">اپلیکیشن مدیریت وظایف</h5>
+              <p class="card-text">Flutter + Firebase + Push Notification + همگام‌سازی ابری</p>
+              <button class="btn btn-outline-success" data-toggle="modal" data-target="#modal2">جزئیات</button>
             </div>
           </div>
         </div>
-        <!-- پروژه ۳ -->
         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/300x200?text=پروژه+3" class="card-img-top" alt="پروژه">
+          <div class="card h-100 shadow-lg">
+            <img src="https://via.placeholder.com/400x250?text=داشبورد+تحلیلی" class="card-img-top" alt="داشبورد">
             <div class="card-body">
-              <h5 class="card-title">داشبورد مدیریت</h5>
-              <p class="card-text">با Vue.js</p>
-              <button class="btn btn-primary" data-toggle="modal" data-target="#modal3">جزئیات</button>
+              <h5 class="card-title">داشبورد تحلیل فروش</h5>
+              <p class="card-text">React + Chart.js + .NET Core API + SQL Server + Real-time</p>
+              <button class="btn btn-outline-warning" data-toggle="modal" data-target="#modal3">جزئیات</button>
             </div>
           </div>
         </div>
@@ -184,90 +176,50 @@
 
   </div>
 
-  <!-- 6. Modal (جزئیات پروژه ۱) -->
-  <div class="modal fade" id="modal1" tabindex="-1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">وب‌سایت فروشگاهی</h5>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          <p>این پروژه شامل سبد خرید، پرداخت آنلاین و پنل مدیریت است.</p>
-          <ul>
-            <li>استفاده از LocalStorage</li>
-            <li>طراحی responsive</li>
-            <li>اتصال به API پرداخت</li>
-          </ul>
-        </div>
-        <div class="modal-footer">
-          <a href="#" class="btn btn-success">مشاهده دمو</a>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
-        </div>
-      </div>
+  <!-- Modalها -->
+  <div class="modal fade" id="modal1"><div class="modal-dialog"><div class="modal-content">
+    <div class="modal-header"><h5>فروشگاه آنلاین</h5><button type="button" class="close" data-dismiss="modal">×</button></div>
+    <div class="modal-body">
+      <ul>
+        <li>پنل مدیریت کامل محصولات و سفارشات</li>
+        <li>پرداخت آنلاین با درگاه زرین‌پال</li>
+        <li>سبد خرید پیشرفته + تخفیف خودکار</li>
+        <li>طراحی کاملاً ریسپانسیو</li>
+      </ul>
     </div>
-  </div>
-
-  <!-- Modal ۲ و ۳ (مشابه) -->
-  <div class="modal fade" id="modal2" tabindex="-1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">اپلیکیشن موبایل</h5>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          <p>اپلیکیشن مدیریت وظایف با React Native.</p>
-          <ul>
-            <li>Push Notification</li>
-            <li>Sync با سرور</li>
-          </ul>
-        </div>
-        <div class="modal-footer">
-          <a href="#" class="btn btn-success">دانلود APK</a>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
-        </div>
-      </div>
+    <div class="modal-footer">
+      <a href="#" class="btn btn-success">دمو زنده</a>
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
     </div>
-  </div>
+  </div></div></div>
 
-  <div class="modal fade" id="modal3" tabindex="-1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">داشبورد مدیریت</h5>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          <p>داشبورد تحلیلی با Vue.js و Chart.js.</p>
-          <ul>
-            <li>نمودارهای تعاملی</li>
-            <li>Real-time data</li>
-          </ul>
-        </div>
-        <div class="modal-footer">
-          <a href="#" class="btn btn-success">مشاهده لایو</a>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div class="modal fade" id="modal2"><div class="modal-dialog"><div class="modal-content">
+    <div class="modal-header"><h5>اپلیکیشن مدیریت وظایف</h5><button type="button" class="close" data-dismiss="modal">×</button></div>
+    <div class="modal-body">اپلیکیشن کراس‌پلتفرم با Flutter — پشتیبانی از Android و iOS — همگام‌سازی با Firebase — نوتیفیکیشن — تم دارک/لایت</div>
+    <div class="modal-footer"><a href="#" class="btn btn-success">دانلود APK</a><button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button></div>
+  </div></div></div>
 
-  <!-- Contact Section -->
+  <div class="modal fade" id="modal3"><div class="modal-dialog"><div class="modal-content">
+    <div class="modal-header"><h5>داشبورد تحلیل فروش</h5><button type="button" class="close" data-dismiss="modal">×</button></div>
+    <div class="modal-body">نمودارهای زنده — اتصال به API .NET Core — احراز هویت JWT — قابلیت Export به Excel</div>
+    <div class="modal-footer"><a href="#" class="btn btn-success">مشاهده لایو</a><button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button></div>
+  </div></div></div>
+
+  <!-- Contact -->
   <section id="contact" class="bg-dark text-white py-5">
     <div class="container text-center">
-      <h3>تماس با من</h3>
-      <p>Email: amir@example.com | تلفن: 09916972207 | LinkedIn: /in/amirkhosro</p>
-      <a href="mailto:amir@example.com" class="btn btn-light">ارسال ایمیل</a>
+      <h3 class="mb-4">در ارتباط باشیم!</h3>
+      <p class="lead">Email: amir@example.com</p>
+      <p class="lead">تلفن: 09916972207</p>
+      <p class="lead">لینکدین: linkedin.com/in/amirkhosro</p>
+      <a href="mailto:amir@example.com" class="btn btn-light btn-lg mt-3">ارسال پیام</a>
     </div>
   </section>
 
-  <!-- Bootstrap JS + jQuery -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
 
 
 

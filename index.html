@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>رزومه | امیر خسروحسین</title>
+  <title>رزومه آپدیت‌شده | امیرحسین خسروپور</title>
 
   <!-- Bootstrap 4 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -24,7 +24,7 @@
   <!-- 1. Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="#">امیر خسروحسین</a>
+      <a class="navbar-brand" href="#">امیرحسین خسروپور</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -42,7 +42,7 @@
   <!-- Hero Section -->
   <section class="hero text-center">
     <div class="container">
-      <h1 class="display-4">سلام، من <strong>امیر خسروحسین</strong> هستم</h1>
+      <h1 class="display-4">سلام، من <strong>امیرحسین خسروپور</strong> هستم</h1>
       <p class="lead">توسعه‌دهنده وب | دانشجوی دانشگاه</p>
       <a href="#contact" class="btn btn-light btn-lg mt-3">تماس با من</a>
     </div>
@@ -157,13 +157,34 @@
             </div>
           </div>
         </div>
-        <!-- پروژه ۲ و ۳ هم مشابه -->
+        <!-- پروژه ۲ -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200?text=پروژه+2" class="card-img-top" alt="پروژه">
+            <div class="card-body">
+              <h5 class="card-title">اپلیکیشن موبایل</h5>
+              <p class="card-text">با React Native</p>
+              <button class="btn btn-primary" data-toggle="modal" data-target="#modal2">جزئیات</button>
+            </div>
+          </div>
+        </div>
+        <!-- پروژه ۳ -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200?text=پروژه+3" class="card-img-top" alt="پروژه">
+            <div class="card-body">
+              <h5 class="card-title">داشبورد مدیریت</h5>
+              <p class="card-text">با Vue.js</p>
+              <button class="btn btn-primary" data-toggle="modal" data-target="#modal3">جزئیات</button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
   </div>
 
-  <!-- 6. Modal (جزئیات پروژه) -->
+  <!-- 6. Modal (جزئیات پروژه ۱) -->
   <div class="modal fade" id="modal1" tabindex="-1">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -187,11 +208,56 @@
     </div>
   </div>
 
+  <!-- Modal ۲ و ۳ (مشابه) -->
+  <div class="modal fade" id="modal2" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">اپلیکیشن موبایل</h5>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>اپلیکیشن مدیریت وظایف با React Native.</p>
+          <ul>
+            <li>Push Notification</li>
+            <li>Sync با سرور</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn btn-success">دانلود APK</a>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal3" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">داشبورد مدیریت</h5>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>داشبورد تحلیلی با Vue.js و Chart.js.</p>
+          <ul>
+            <li>نمودارهای تعاملی</li>
+            <li>Real-time data</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn btn-success">مشاهده لایو</a>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Contact Section -->
   <section id="contact" class="bg-dark text-white py-5">
     <div class="container text-center">
       <h3>تماس با من</h3>
-      <p>Email: amir@example.com | تلفن: ۰۹۱۲۳۴۵۶۷۸۹</p>
+      <p>Email: amir@example.com | تلفن: 09916972207 | LinkedIn: /in/amirkhosro</p>
       <a href="mailto:amir@example.com" class="btn btn-light">ارسال ایمیل</a>
     </div>
   </section>
@@ -201,6 +267,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
 
 
 
